@@ -581,6 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLife: {fileID: 1581710165}
   movePlayer: {fileID: 228809998}
+  spawn: {fileID: 1777753031}
 --- !u!61 &412363208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4920,7 +4921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -222, y: 145}
+  m_AnchoredPosition: {x: -120, y: 91}
   m_SizeDelta: {x: 136.00345, y: 30.912231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581710165
@@ -5243,6 +5244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1777753030}
+  - component: {fileID: 1777753031}
   m_Layer: 0
   m_Name: PlayerSpawn
   m_TagString: PlayerSpawn
@@ -5264,6 +5266,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1777753031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777753029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cce1a8c0cd56e64ba198c140a489cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1886098180
 GameObject:
   m_ObjectHideFlags: 0
