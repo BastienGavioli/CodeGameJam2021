@@ -1,12 +1,36 @@
 ﻿using UnityEngine;
 
+
+
 public class DeathZone : MonoBehaviour
 {
-   private void OnTriggerEnter2D(Collider2D collision)
+
+    public life playerLife;
+    public PlayerMovement movePlayer;
+
+    void Start()
     {
+        Debug.Log(playerLife.estMort());
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+
         if (collision.CompareTag("Player"))
         {
-            collision.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.position;
+            playerLife.lostxLife(1);
+            if (playerLife.estMort())
+            {
+                collision.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.position;
+            }
+            else
+            {
+                movePlayer.jumpHurt();
+            }
+
         }
     }
+    
 }
