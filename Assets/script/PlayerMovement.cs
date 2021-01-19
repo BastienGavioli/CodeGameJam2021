@@ -15,17 +15,15 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
 
     public Animator animator;
-    public SpriteRenderer spriteRenderer; 
+    public SpriteRenderer spriteRenderer;
 
 
     void FixedUpdate()
     {
 
         isGrounded = Physics2D.OverlapArea(footleft.position, footRight.position);
-        Debug.Log(isGrounded);
 
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-
 
 
         float verticalMvt = Input.GetAxis("Vertical") * jumpPower * Time.deltaTime;
@@ -38,6 +36,11 @@ public class PlayerMovement : MonoBehaviour
         Flip(rb.velocity.x);
         float characterVelocity = Mathf.Abs(rb.velocity.x);
         animator.SetFloat("Run", characterVelocity);
+        animator.SetFloat("Jump", verticalMvt);
+        animator.SetFloat("Jump", verticalMvt);
+
+
+
     }
 
     void movePlayer(float _horizontalMovement)
@@ -51,7 +54,10 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpPower*3));
             isJumping = false;
 
+
         }
+
+
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, .05f);
     }

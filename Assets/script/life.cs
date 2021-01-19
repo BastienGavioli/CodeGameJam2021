@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class life : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class life : MonoBehaviour
     public GameObject coeur3;
     public GameObject coeur4;
     public GameObject coeur5;
+
+    public string sceneGameOver = "GameOver";
 
     private GameObject[] tabCoeur;
 
@@ -28,6 +31,11 @@ public class life : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.G))
         {
             gainxLife(1);
+        }
+
+        if (vie <= 1)
+        {
+            SceneManager.LoadScene(sceneGameOver);
         }
     }
 
