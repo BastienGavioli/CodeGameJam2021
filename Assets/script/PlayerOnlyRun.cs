@@ -24,7 +24,7 @@ public class PlayerOnlyRun : MonoBehaviour
         movePlayer(horizontalMovement);
 
         float characterVelocity = Mathf.Abs(rb.velocity.x);
-        animator.SetFloat("Speed", characterVelocity);
+        animator.SetFloat("Run", characterVelocity);
     }
 
     void movePlayer(float _horizontalMovement)
