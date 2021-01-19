@@ -19,5 +19,4 @@ public class goToMenu : MonoBehaviour
         yield return new WaitForSeconds(timeToGoMenu);
         SceneManager.LoadScene(sceneToLoad);
     }
-
 }
