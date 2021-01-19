@@ -24,7 +24,7 @@ public class life : MonoBehaviour
     // Update is called once per frame 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.P))
         {
             lostxLife(1);
         }
@@ -33,7 +33,7 @@ public class life : MonoBehaviour
             gainxLife(1);
         }
 
-        if (vie <= 1)
+        if (vie < 1)
         {
             SceneManager.LoadScene(sceneGameOver);
         }
@@ -68,7 +68,6 @@ public class life : MonoBehaviour
         for(int i=0; i<vie; i++)
         {
             tabCoeur[i].SetActive(true);
-
         }
     }
     public bool estMort()
