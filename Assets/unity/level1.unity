@@ -253,6 +253,7 @@ MonoBehaviour:
   footleft: {fileID: 1162538383}
   footRight: {fileID: 859538967}
   rb: {fileID: 228809999}
+  animator: {fileID: 228810003}
 --- !u!50 &228809999
 Rigidbody2D:
   serializedVersion: 4
