@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
 
     public Animator animator;
- 
+    public SpriteRenderer spriteRenderer; 
 
 
     void FixedUpdate()
@@ -35,9 +35,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         movePlayer(horizontalMovement);
-
+        Flip(rb.velocity.x);
         float characterVelocity = Mathf.Abs(rb.velocity.x);
-        animator.SetFloat("Speed", characterVelocity);
+        animator.SetFloat("Run", characterVelocity);
     }
 
     void movePlayer(float _horizontalMovement)
@@ -60,5 +60,16 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.AddForce(new Vector2(0f, jumpPower*3));
 
+    }
+
+    void Flip(float _velocity)
+    {
+        if(_velocity > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }else if(_velocity < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 }

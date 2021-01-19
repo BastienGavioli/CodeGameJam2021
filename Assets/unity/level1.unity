@@ -179,6 +179,7 @@ MonoBehaviour:
   footRight: {fileID: 859538967}
   rb: {fileID: 120049352}
   animator: {fileID: 120049350}
+  spriteRenderer: {fileID: 120049354}
 --- !u!50 &120049352
 Rigidbody2D:
   serializedVersion: 4
@@ -17507,7 +17508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115.1, y: 129}
+  m_AnchoredPosition: {x: -371, y: 183}
   m_SizeDelta: {x: 136.00345, y: 30.912231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581710165
