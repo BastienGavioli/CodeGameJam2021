@@ -13,8 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     private Vector3 velocity = Vector3.zero;
-    
-    
+
+    public Animator animator;
  
 
     void FixedUpdate()
@@ -28,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
             isJumping = true;
         }
         movePlayer(horizontalMovement);
+
+        float characterVelocity = Mathf.Abs(rb.velocity.x);
+        animator.SetFloat("Speed", characterVelocity);
     }
 
     void movePlayer(float _horizontalMovement)
