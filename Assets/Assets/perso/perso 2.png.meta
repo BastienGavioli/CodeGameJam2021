@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: ea55c4ab5a5b9374a993df643a27d4cb
+guid: 85bf06131f1c1ee4290ebabbcf300e21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -908331008314907573
-    second: perso_0
+      213: -1420480074321306891
+    second: perso 2_0
   - first:
-      213: -1289069066454474417
-    second: perso_1
+      213: 8324153494950181338
+    second: perso 2_1
   - first:
-      213: 278551203992198974
-    second: perso_2
+      213: -3551834365219451216
+    second: perso 2_2
   - first:
-      213: 784607877193466032
-    second: perso_3
+      213: 5747065968068044440
+    second: perso 2_3
   - first:
-      213: -1534645505422765451
-    second: perso_4
+      213: 5403195781235086854
+    second: perso 2_4
   - first:
-      213: 9022065342049185172
-    second: perso_5
+      213: 589783930321784383
+    second: perso 2_5
+  - first:
+      213: 9079535854856431608
+    second: perso 2_6
+  - first:
+      213: 6192477244231364483
+    second: perso 2_7
+  - first:
+      213: -1184820637734200379
+    second: perso 2_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +114,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: perso_0
+      name: perso 2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b44eaeea2c5f463f0800000000000000
-      internalID: -908331008314907573
+      spriteID: 5fade8ff5e0794ce0800000000000000
+      internalID: -1420480074321306891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso_1
+      name: perso 2_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +149,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f41690b838e4c1ee0800000000000000
-      internalID: -1289069066454474417
+      spriteID: ad9f45a1085558370800000000000000
+      internalID: 8324153494950181338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso_2
+      name: perso 2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bec118967955bec0800000000000000
+      internalID: -3551834365219451216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso 2_3
       rect:
         serializedVersion: 2
         x: 0
@@ -161,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3f56bd18dc9dd300800000000000000
-      internalID: 278551203992198974
+      spriteID: 896ae677c0ea1cf40800000000000000
+      internalID: 5747065968068044440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso_3
+      name: perso 2_4
       rect:
         serializedVersion: 2
         x: 32
@@ -182,14 +212,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b0071015bc73ea00800000000000000
-      internalID: 784607877193466032
+      spriteID: 60618688fe10cfa40800000000000000
+      internalID: 5403195781235086854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso_4
+      name: perso 2_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e401d1c555f2800800000000000000
+      internalID: 589783930321784383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso 2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -203,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57250213b08d3bae0800000000000000
-      internalID: -1534645505422765451
+      spriteID: 8f7e32a21cdf00e70800000000000000
+      internalID: 9079535854856431608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso_5
+      name: perso 2_7
       rect:
         serializedVersion: 2
         x: 32
@@ -224,8 +275,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49d643da0a0d43d70800000000000000
-      internalID: 9022065342049185172
+      spriteID: 38fa9169e3910f550800000000000000
+      internalID: 6192477244231364483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso 2_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb1d4d48ebae8fe0800000000000000
+      internalID: -1184820637734200379
       vertices: []
       indices: 
       edges: []
