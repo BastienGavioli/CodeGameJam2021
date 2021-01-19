@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapArea(footleft.position, footRight.position);
 
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if ((Input.GetButtonDown("Jump") && isGrounded) || Input.GetKeyDown(KeyCode.U))
         {
             isJumping = true;
         }
