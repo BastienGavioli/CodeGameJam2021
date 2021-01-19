@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TimeBeforeLoadAnotherScene : MonoBehaviour
 {
-    private int TimeVideo = 27;
+    private int TimeVideo = 25;
     public string sceneNameToLoad;
 
     void Start()
