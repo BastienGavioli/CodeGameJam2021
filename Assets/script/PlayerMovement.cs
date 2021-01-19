@@ -22,23 +22,18 @@ public class PlayerMovement : MonoBehaviour
     {
 
         isGrounded = Physics2D.OverlapArea(footleft.position, footRight.position);
+        Debug.Log(isGrounded);
 
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
 
 
-        Debug.Log(horizontalMovement);
 
         float verticalMvt = Input.GetAxis("Vertical") * jumpPower * Time.deltaTime;
-        Debug.Log(verticalMvt);
         if (verticalMvt > 0 && isGrounded)
         {
             isJumping = true;
         }
-        /*if ((Input.GetButtonDown("Jump") && isGrounded) || Input.GetKeyDown(KeyCode.U))
-        {
-            isJumping = true;
-            Debug.Log("OK 1");
-        }*/
+
         movePlayer(horizontalMovement);
 
         float characterVelocity = Mathf.Abs(rb.velocity.x);
@@ -52,21 +47,18 @@ public class PlayerMovement : MonoBehaviour
         
         if (isJumping)
         {
-            Debug.Log("OK 3");
 
-            rb.AddForce(new Vector2(0f, jumpPower));
+            rb.AddForce(new Vector2(0f, jumpPower*3));
             isJumping = false;
 
         }
-        Debug.Log("isGrounded = " + isGrounded);
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, .05f);
     }
 
     public void jumpHurt()
     {
-        rb.AddForce(new Vector2(0f, jumpPower));
-        Debug.Log("OK 5");
+        rb.AddForce(new Vector2(0f, jumpPower*3));
 
     }
 }
