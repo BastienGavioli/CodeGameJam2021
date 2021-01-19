@@ -21,14 +21,14 @@ public class DeathZone : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerLife.lostxLife(1);
-            if (playerLife.estMort())
+            //if (playerLife.estMort())
+            if(true)
             {
                 movePlayer.jumpHurt();
-
             }
             else
             {
-                collision.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.position;
+                //collision.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.position;
             }
 
         }
