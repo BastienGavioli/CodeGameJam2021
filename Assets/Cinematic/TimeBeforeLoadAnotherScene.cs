@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeBeforeLoadAnotherScene : MonoBehaviour
 {
     private int TimeVideo = 27;
+    public string sceneNameToLoad;
+
     void Start()
     {
         StartCoroutine(MyCoroutine());
+
     }
 
     IEnumerator MyCoroutine()
@@ -15,12 +19,8 @@ public class TimeBeforeLoadAnotherScene : MonoBehaviour
         yield return new WaitForSeconds(TimeVideo);
         print("27 secondes sont passé");
 
-        changeScene;
+        SceneManager.LoadScene(sceneNameToLoad);
 
     }
-    
-    void Update()
-    {
-        
-    }
+
 }

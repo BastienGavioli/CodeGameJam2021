@@ -23,11 +23,12 @@ public class DeathZone : MonoBehaviour
             playerLife.lostxLife(1);
             if (playerLife.estMort())
             {
-                collision.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.position;
+                movePlayer.jumpHurt();
+
             }
             else
             {
-                movePlayer.jumpHurt();
+                collision.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.position;
             }
 
         }
