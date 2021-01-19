@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
         float characterVelocity = Mathf.Abs(rb.velocity.x);
         animator.SetFloat("Run", characterVelocity);
         animator.SetFloat("Jump", verticalMvt);
+        animator.SetFloat("Jump", verticalMvt);
+
 
 
     }
