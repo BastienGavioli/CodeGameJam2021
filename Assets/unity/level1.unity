@@ -14854,7 +14854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058013202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1130.9, y: -52, z: -30.136719}
+  m_LocalPosition: {x: 1130.1, y: -72.4, z: -30.136719}
   m_LocalScale: {x: 45.0658, y: 20.598167, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17528,6 +17528,7 @@ MonoBehaviour:
   coeur3: {fileID: 922724157}
   coeur4: {fileID: 1579389428}
   coeur5: {fileID: 242118115}
+  sceneGameOver: GameOver
 --- !u!1 &1691109477
 GameObject:
   m_ObjectHideFlags: 0
