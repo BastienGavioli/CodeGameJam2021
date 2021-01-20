@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/unity/GameOver.unity
     guid: 1930eed9ac80788469332e9be6ae6b42
+  - enabled: 1
+    path: Assets/unity/asteroid.unity
+    guid: 0262dbd810acad04f868b4074c34bfb7
+  - enabled: 1
+    path: Assets/unity/hackWin.unity
+    guid: d3e852248d09d974c806398a6f33bcae
+  - enabled: 1
+    path: Assets/unity/tutoclik.unity
+    guid: 9b0ec04935a72c34c8d2ed4dd17d0703
   m_configObjects: {}
