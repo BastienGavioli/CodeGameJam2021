@@ -342,7 +342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &507276889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,10 +792,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Game Design : \nAnsimuz,Nicolas Charlier, Niss36, larkspurbetula, MrMentrix\n\nMusic
-    : \nAlexandre Roussel (Alexis Cordier)\n\nLevel Design : \nFressard Melanie,
-    Enzo Viguier\n\nDebug : \nGatien Depeyre\n\nProgramation, Scenario : \nNicolas
-    Charlier, Gatien Depeyre, Melanie Fressard, Bastien Gavioli, Alexandre Roussel
-    & Enzo Viguier"
+    : \nAlexandre Roussel (Alexis Cordier), Cron Audio\n\nLevel Design : \nFressard
+    Melanie, Enzo Viguier\n\nDebug : \nGatien Depeyre\n\nProgramation, Scenario :
+    \nNicolas Charlier, Gatien Depeyre, Melanie Fressard, Bastien Gavioli, Alexandre
+    Roussel & Enzo Viguier"
 --- !u!222 &1210363816
 CanvasRenderer:
   m_ObjectHideFlags: 0
