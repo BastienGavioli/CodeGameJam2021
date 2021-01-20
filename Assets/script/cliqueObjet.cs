@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class cliqueObjet : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class cliqueObjet : MonoBehaviour
     public float positionY;
 
     public GameObject camera;
+
 
 
     // Update is called once per frame
@@ -93,7 +95,7 @@ public class cliqueObjet : MonoBehaviour
 
         if (antiVDestroy >= 5)
         {
-            camera.transform.position = new Vector3(0, 0);
+            SceneManager.LoadScene("hackWin");
         }
 
     }
