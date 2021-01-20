@@ -4,8 +4,27 @@ using UnityEngine;
 
 public class cliqueObjet : MonoBehaviour
 {
+    public life pv;
+    private int antiVDestroy = 0;
+
     private Vector3 mousePos = Vector3.zero;
     public GameObject[] tabAntiV;
+    public Monster[] actionAntiV;
+
+
+    public GameObject Player;
+
+    private Vector3 velocity;
+
+    void Start()
+    {/*
+        for(int i=0; i<tabAntiV.Length; i++)
+        {
+            tabNomAntiV[i] = tabAntiV[i].name;
+        }
+        */
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,15 +38,43 @@ public class cliqueObjet : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 
+            Debug.Log(hit);
+
             if (hit.collider != null)
             {
-                Debug.Log(hit.collider.gameObject.name);
-                if (hit.collider.gameObject.name == tabAntiV[1].name)
+                actionAntiV[0].bouge(Player, velocity);
+                Destroy(tabAntiV[contact(hit)]);
+                /*
+                if (contact(hit)!=-1)
                 {
-                    Debug.Log("OOOOK");
-                }
+                    hit.collider.attachedRigidbody.AddForce(Vector2.up);
+                }*/
             }
-
         }
+
+
     }
+
+  
+
+
+    private int contact(RaycastHit2D hit)
+    {
+        int n = -1;
+        for(int i=0; i<tabAntiV.Length; i++)
+        {
+            if(hit.collider.gameObject.name == tabAntiV[i].name)
+            {
+                n = i;
+            }
+        }
+        return n;
+    }
+
+    public void estTouche()
+    {
+        pv.lostxLife(1);
+    }
+
+   
 }
