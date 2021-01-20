@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class changeSceneWithTime : MonoBehaviour
+public class goToMenu : MonoBehaviour
 {
 
-    private int timeToGoMenu = 3;
+    private int timeToGoLevel1 = 3;
     public string sceneToLoad;
 
     void Start()
@@ -16,7 +16,7 @@ public class changeSceneWithTime : MonoBehaviour
 
     IEnumerator MyCoroutine()
     {
-        yield return new WaitForSeconds(timeToGoMenu);
+        yield return new WaitForSeconds(timeToGoLevel1);
         SceneManager.LoadScene(sceneToLoad);
     }
 }
