@@ -3084,7 +3084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534785764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 147.3, y: -7.77, z: 0}
+  m_LocalPosition: {x: 133.39, y: -10.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3257,7 +3257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572246185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 124.78, y: -7.42, z: 0}
+  m_LocalPosition: {x: 124.78, y: -10.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4027,6 +4027,7 @@ GameObject:
   - component: {fileID: 1304511691}
   - component: {fileID: 1304511696}
   - component: {fileID: 1304511692}
+  - component: {fileID: 1304511697}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Ennemie
@@ -4156,7 +4157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304511690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.73, y: -9.86, z: 0}
+  m_LocalPosition: {x: 129.73, y: -9.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 681675080}
@@ -4182,6 +4183,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1304511697
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304511690}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!1 &1328302545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,7 +4856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226be8ed029713c44aa67b5152dde9fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1506480495}
+  Player: {fileID: 1304511690}
   timeOffset: 0
   posOffset: {x: 0, y: 0, z: -10}
 --- !u!1 &1905554283
