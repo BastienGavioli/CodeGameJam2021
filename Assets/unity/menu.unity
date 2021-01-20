@@ -1794,7 +1794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee99c59933cd935488daef8aec09d59b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: level1
+  Level: level0
   helpPanel: {fileID: 658738855}
   creditsPanel: {fileID: 771321772}
   settingsPanel: {fileID: 1538525065}
