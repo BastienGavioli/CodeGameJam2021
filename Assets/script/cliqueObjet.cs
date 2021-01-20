@@ -14,6 +14,8 @@ public class cliqueObjet : MonoBehaviour
     public float positionX;
     public float positionY;
 
+    public GameObject camera;
+
 
     // Update is called once per frame
     void Update()
@@ -24,12 +26,12 @@ public class cliqueObjet : MonoBehaviour
             positionX = mousePos.x + Random.Range(-5.0f, 5.0f);
             positionY = mousePos.y + Random.Range(-5.0f, 5.0f);
 
-                deplacementObjet(tabAntiV[(int)Random.Range(0.0f, 8.0f)]);
-            
+            deplacementObjet(tabAntiV[(int)(Random.Range(0.0f, 8.0f))]);
 
 
 
-                mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
@@ -37,7 +39,7 @@ public class cliqueObjet : MonoBehaviour
 
             if (hit.collider != null)
             {
-                
+
                 if (hit.collider.gameObject.name == tabAntiV[0].name)
                 {
                     tabAntiV[0].SetActive(false);
@@ -84,19 +86,44 @@ public class cliqueObjet : MonoBehaviour
                     Destroy(tabAntiV[8]);
                     antiVDestroy++;
                 }
-            }
-
+                Debug.Log(antiVDestroy);
             }
 
         }
 
+        if (antiVDestroy >= 5)
+        {
+            camera.transform.position = new Vector3(0, 0);
+        }
+
+    }
+
+
+   
+
+    private bool contact(RaycastHit2D hit)
+    {
+        for(int i=0; i<8; i++)
+        {
+            if (hit.collider.gameObject.name == tabAntiV[i].name)
+            {
+                Debug.Log("OOOOK");
+            }
+        }
+        return true;
+    }
+
+    public void estTouche()
+    {
+        pv.lostxLife(1);
+    }
 
     
 
 
-        void deplacementObjet(GameObject objet)
-        {
-            objet.transform.position = new Vector3(positionX, positionY);
-        }
+    void deplacementObjet(GameObject objet)
+    {
+        objet.transform.position = new Vector3(positionX, positionY);
+    }
   
 }
