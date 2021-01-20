@@ -9,15 +9,18 @@ EditorBuildSettings:
     path: Assets/unity/GameOver.unity
     guid: 1930eed9ac80788469332e9be6ae6b42
   - enabled: 1
-    path: Assets/unity/menu.unity
-    guid: 63b4977de6d93c043bb69350aa6746ce
-  - enabled: 1
     path: "Assets/unity/IntroCin\xE9matique.unity"
     guid: d2333bb7dd905f54bb51e7ab564e17dc
   - enabled: 1
-    path: Assets/unity/level1.unity
-    guid: b337ee51046477d4f9527268051ca8c0
+    path: Assets/unity/menu.unity
+    guid: 63b4977de6d93c043bb69350aa6746ce
+  - enabled: 1
+    path: Assets/unity/level0.unity
+    guid: 1c47472d88c52704ba0d2c6e0363d546
   - enabled: 1
     path: Assets/unity/tutorial.unity
     guid: f932b610689162748b0532414489eca0
+  - enabled: 1
+    path: Assets/unity/level1.unity
+    guid: b337ee51046477d4f9527268051ca8c0
   m_configObjects: {}
