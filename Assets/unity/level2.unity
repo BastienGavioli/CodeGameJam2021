@@ -4426,7 +4426,6 @@ GameObject:
   - component: {fileID: 894775136}
   - component: {fileID: 894775134}
   - component: {fileID: 894775133}
-  - component: {fileID: 894775132}
   m_Layer: 0
   m_Name: CrabeFixe
   m_TagString: Ennemie
@@ -4434,22 +4433,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &894775132
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894775131}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
 --- !u!50 &894775133
 Rigidbody2D:
   serializedVersion: 4
@@ -5497,7 +5480,6 @@ GameObject:
   - component: {fileID: 1304511691}
   - component: {fileID: 1304511696}
   - component: {fileID: 1304511692}
-  - component: {fileID: 1304511697}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Ennemie
@@ -5653,22 +5635,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &1304511697
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304511690}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
 --- !u!1 &1328302545
 GameObject:
   m_ObjectHideFlags: 0
@@ -5913,7 +5879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369028026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -74.09, y: -8.37, z: 0}
+  m_LocalPosition: {x: 62.7, y: 0.1, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11554,7 +11520,6 @@ GameObject:
   - component: {fileID: 2001852529}
   - component: {fileID: 2001852528}
   - component: {fileID: 2001852527}
-  - component: {fileID: 2001852526}
   m_Layer: 0
   m_Name: CrabeFixe (1)
   m_TagString: Ennemie
@@ -11562,22 +11527,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &2001852526
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001852525}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
 --- !u!50 &2001852527
 Rigidbody2D:
   serializedVersion: 4
@@ -11763,7 +11712,6 @@ GameObject:
   - component: {fileID: 2059286855}
   - component: {fileID: 2059286854}
   - component: {fileID: 2059286853}
-  - component: {fileID: 2059286852}
   m_Layer: 0
   m_Name: CrabeFixe (2)
   m_TagString: Ennemie
@@ -11771,22 +11719,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &2059286852
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059286851}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
 --- !u!50 &2059286853
 Rigidbody2D:
   serializedVersion: 4
@@ -11932,7 +11864,6 @@ GameObject:
   - component: {fileID: 2143563079}
   - component: {fileID: 2143563078}
   - component: {fileID: 2143563077}
-  - component: {fileID: 2143563076}
   m_Layer: 0
   m_Name: CrabeFixe (3)
   m_TagString: Ennemie
@@ -11940,22 +11871,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &2143563076
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143563075}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
 --- !u!50 &2143563077
 Rigidbody2D:
   serializedVersion: 4
