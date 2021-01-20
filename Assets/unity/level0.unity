@@ -1626,7 +1626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c511d89884ac884388672daa27769d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: tutorial
+  sceneNameToLoad: tutoclik
 --- !u!61 &1929428572
 BoxCollider2D:
   m_ObjectHideFlags: 0
