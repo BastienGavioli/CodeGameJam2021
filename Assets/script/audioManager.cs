@@ -19,12 +19,13 @@ public class audioManager : MonoBehaviour
         if (!audioSource.isPlaying)
         {
             index++;
-            audioSource.clip = playlist[index];
-            audioSource.Play();
-            if (index == 2)
+            if (index >= playlist.Length)
             {
                 index = 0;
             }
+            audioSource.clip = playlist[index];
+            audioSource.Play();
+
         }
     }
 }
