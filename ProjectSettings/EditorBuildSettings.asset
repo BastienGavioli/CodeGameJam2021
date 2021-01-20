@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/unity/level0.unity
     guid: 1c47472d88c52704ba0d2c6e0363d546
   - enabled: 1
+    path: Assets/unity/tutoclik.unity
+    guid: 9b0ec04935a72c34c8d2ed4dd17d0703
+  - enabled: 1
+    path: Assets/unity/asteroid.unity
+    guid: 0262dbd810acad04f868b4074c34bfb7
+  - enabled: 1
+    path: Assets/unity/hackWin.unity
+    guid: d3e852248d09d974c806398a6f33bcae
+  - enabled: 1
     path: Assets/unity/tutorial.unity
     guid: f932b610689162748b0532414489eca0
   - enabled: 1
@@ -24,15 +33,9 @@ EditorBuildSettings:
     path: Assets/unity/level2.unity
     guid: e3b3d72d8890a6f488d7c995cce8d20e
   - enabled: 1
+    path: Assets/unity/theEnd.unity
+    guid: 397e547dd65e3a24f9f32f811a9d5dee
+  - enabled: 1
     path: Assets/unity/GameOver.unity
     guid: 1930eed9ac80788469332e9be6ae6b42
-  - enabled: 1
-    path: Assets/unity/asteroid.unity
-    guid: 0262dbd810acad04f868b4074c34bfb7
-  - enabled: 1
-    path: Assets/unity/hackWin.unity
-    guid: d3e852248d09d974c806398a6f33bcae
-  - enabled: 1
-    path: Assets/unity/tutoclik.unity
-    guid: 9b0ec04935a72c34c8d2ed4dd17d0703
   m_configObjects: {}
