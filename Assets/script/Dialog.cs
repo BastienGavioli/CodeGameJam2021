@@ -1,19 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 public class Dialog : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
-    public string[] sentences;
-    private int index;
-    public float typingSpeed;
-    IEnumerator Type()
+    public Text changedText;
+    public Text changingText;
+
+    public void TextDialogChange()
     {
-        foreach (char letter in sentences[index].ToCharArray())
-        {
-            textDisplay.text += letter;
-            yield return new WaitForSeconds(0.02f);
-        }
+        changedText.text = changingText.text;
     }
 }
