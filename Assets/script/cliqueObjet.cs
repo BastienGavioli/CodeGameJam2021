@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class cliqueObjet : MonoBehaviour
 {
@@ -9,28 +10,28 @@ public class cliqueObjet : MonoBehaviour
 
     private Vector3 mousePos = Vector3.zero;
     public GameObject[] tabAntiV;
-    public Monster[] actionAntiV;
+    private string[] tabNomAntiV;
+
+    public float positionX;
+    public float positionY;
+
+    public GameObject camera;
 
 
-    public GameObject Player;
-
-    private Vector3 velocity;
-
-    void Start()
-    {/*
-        for(int i=0; i<tabAntiV.Length; i++)
-        {
-            tabNomAntiV[i] = tabAntiV[i].name;
-        }
-        */
-
-    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            // tabAntiV[0].transform.position = new Vector3(Random.Range(-1106.0f, 1156.0f), 0Random.Range(-40.0f, 0.0f));
+            positionX = mousePos.x + Random.Range(-5.0f, 5.0f);
+            positionY = mousePos.y + Random.Range(-5.0f, 5.0f);
+
+            deplacementObjet(tabAntiV[(int)(Random.Range(0.0f, 8.0f))]);
+
+
+
 
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -38,37 +39,80 @@ public class cliqueObjet : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 
-            Debug.Log(hit);
-
             if (hit.collider != null)
             {
-                actionAntiV[0].bouge(Player, velocity);
-                Destroy(tabAntiV[contact(hit)]);
-                /*
-                if (contact(hit)!=-1)
+
+                if (hit.collider.gameObject.name == tabAntiV[0].name)
                 {
-                    hit.collider.attachedRigidbody.AddForce(Vector2.up);
-                }*/
+                    tabAntiV[0].SetActive(false);
+                    antiVDestroy++;
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[1].name) {
+                    tabAntiV[1].SetActive(false);
+                    antiVDestroy++;
+
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[2].name)
+                {
+                    tabAntiV[2].SetActive(false);
+                    antiVDestroy++;
+
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[3].name)
+                {
+                    Destroy(tabAntiV[3]);
+                    antiVDestroy++;
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[4].name)
+                {
+                    Destroy(tabAntiV[4]);
+                    antiVDestroy++;
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[5].name)
+                {
+                    Destroy(tabAntiV[5]);
+                    antiVDestroy++;
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[6].name)
+                {
+                    Destroy(tabAntiV[6]);
+                    antiVDestroy++;
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[7].name)
+                {
+                    Destroy(tabAntiV[7]);
+                    antiVDestroy++;
+                }
+                else if (hit.collider.gameObject.name == tabAntiV[8].name)
+                {
+                    Destroy(tabAntiV[8]);
+                    antiVDestroy++;
+                }
+                Debug.Log(antiVDestroy);
             }
+
         }
 
+        if (antiVDestroy >= 5)
+        {
+            SceneManager.LoadScene("hackWin");
+        }
 
     }
 
-  
 
+   
 
-    private int contact(RaycastHit2D hit)
+    private bool contact(RaycastHit2D hit)
     {
-        int n = -1;
-        for(int i=0; i<tabAntiV.Length; i++)
+        for(int i=0; i<8; i++)
         {
-            if(hit.collider.gameObject.name == tabAntiV[i].name)
+            if (hit.collider.gameObject.name == tabAntiV[i].name)
             {
-                n = i;
+                Debug.Log("OOOOK");
             }
         }
-        return n;
+        return true;
     }
 
     public void estTouche()
@@ -76,5 +120,12 @@ public class cliqueObjet : MonoBehaviour
         pv.lostxLife(1);
     }
 
-   
+    
+
+
+    void deplacementObjet(GameObject objet)
+    {
+        objet.transform.position = new Vector3(positionX, positionY);
+    }
+  
 }
