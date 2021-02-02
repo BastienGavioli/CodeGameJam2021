@@ -25,6 +25,7 @@ public class cliqueObjet : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             // tabAntiV[0].transform.position = new Vector3(Random.Range(-1106.0f, 1156.0f), 0Random.Range(-40.0f, 0.0f));
+            
             positionX = mousePos.x + Random.Range(-5.0f, 5.0f);
             positionY = mousePos.y + Random.Range(-5.0f, 5.0f);
 
@@ -41,54 +42,51 @@ public class cliqueObjet : MonoBehaviour
 
             if (hit.collider != null)
             {
+                antiVDestroy++;
+
 
                 if (hit.collider.gameObject.name == tabAntiV[0].name)
                 {
                     tabAntiV[0].SetActive(false);
-                    antiVDestroy++;
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[1].name) {
                     tabAntiV[1].SetActive(false);
-                    antiVDestroy++;
 
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[2].name)
                 {
                     tabAntiV[2].SetActive(false);
-                    antiVDestroy++;
 
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[3].name)
                 {
                     Destroy(tabAntiV[3]);
-                    antiVDestroy++;
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[4].name)
                 {
                     Destroy(tabAntiV[4]);
-                    antiVDestroy++;
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[5].name)
                 {
                     Destroy(tabAntiV[5]);
-                    antiVDestroy++;
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[6].name)
                 {
                     Destroy(tabAntiV[6]);
-                    antiVDestroy++;
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[7].name)
                 {
                     Destroy(tabAntiV[7]);
-                    antiVDestroy++;
                 }
                 else if (hit.collider.gameObject.name == tabAntiV[8].name)
                 {
                     Destroy(tabAntiV[8]);
-                    antiVDestroy++;
                 }
                 Debug.Log(antiVDestroy);
+            }
+            else
+            {
+                SceneManager.LoadScene("GameOver");
             }
 
         }
